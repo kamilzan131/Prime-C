@@ -1,0 +1,141 @@
+/* body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background: #DCDCDC;
+} */
+
+.open-button {
+  width: 250px;
+  color: #888;
+  background: #FFF;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 2px;
+  position: relative;
+  top: 50px;
+  border-radius: 25px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+  padding: 20px;
+  transition: all 0.3s;
+}
+
+.open-button:hover {
+  top: 45px;
+}
+
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .8);
+  opacity: 1;
+  transition: opacity .8s;
+}
+
+
+.form-popup {
+  max-width: 466px;
+  background: #E5E5E5;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding: 36px 0 48px 0;
+}
+
+
+
+
+.form-popup__header {
+  margin-bottom: 20px;
+  font-weight: bold;
+  line-height: 130%;
+  color: #3A4454;
+}
+
+.form-popup__header-text {
+  color: #2c2c2c;
+  font-size: 28px;
+
+}
+
+.form-popup__input {
+  border: #C4C4C4 solid 1px;
+  width: 394px;
+  height: 59px;
+  background-color: white;
+  font-size: 21px;
+  line-height: 140%;
+  padding-left: 16px;
+  margin-bottom: 24px;
+}
+
+.form-popup__button {}
+
+.form-popup .button-popup {
+  padding: 0 10px;
+  line-height: 50px;
+  width: 100%;
+  font-size: 22px;
+  color: #fff;
+  background-color: #0575a4;
+  border-color: #ccc;
+  border-width: 0px;
+  border-style: solid;
+  border-radius: 6px;
+}
+
+.form-popup__license {
+  margin: 10px auto;
+}
+
+
+.popup p {
+  line-height: 1.5;
+  font-size: 90%;
+}
+
+
+.close-popup {
+  position: absolute;
+  top: 0;
+  right: 15px;
+  font-size: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #333;
+
+}
+
+.close-popup::after {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration: inherit;
+  margin: 0;
+  line-height: 38px;
+  font-size: 1em;
+  display: block;
+  color: #777;
+  content: "\f00d";
+  padding-left: 15px;
+}
+
+
+.close-popup-l {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -1;
+
+}
