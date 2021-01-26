@@ -73,7 +73,7 @@ h4 {
 .header {
   background-image: url("Images/Rectangle\ 4.jpg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position-x: center;
 }
 
 .header-contacts {
@@ -112,17 +112,18 @@ h4 {
 .my-btn {}
 
 .header-name {
-  margin-top: 214px;
-  margin-bottom: 22px;
-  padding: 0 200px;
+  margin: 214px auto 22px auto;
   text-align: center;
+  text-align: center;
+  max-width: 1017px;
+  padding: 0 10px;
 }
 
 .header-discr {
-  padding: 0 370px;
+  max-width: 600px;
   text-align: center;
-  padding-bottom: 247px;
-
+  margin: 0 auto;
+  padding: 0 10px 247px 10px;
 }
 
 .offer {
@@ -140,23 +141,31 @@ h4 {
 .offer-list {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  margin: 0 auto 70px auto;
+  margin: 0 auto 50px auto;
   max-width: 1090px;
 }
 
 .offer-item {
   vertical-align: top;
-
+  text-align: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .offer-item__img {
   margin-right: 28px;
+
 }
 
 .offer-item__discr {
+  display: inline-block;
   font-weight: bold;
   font-size: 30px;
   line-height: 140%;
@@ -177,41 +186,33 @@ h4 {
   position: absolute;
   left: 0px;
   top: 0px;
+  height: 100%;
 }
 
 .right-img {
   position: absolute;
   right: 0px;
   top: 0px;
+  height: 100%;
 }
 
 .our-services-bg {
   background-color: #1F6EB6;
-
+  z-index: -2;
 }
 
-.our-services {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  height: 100%;
-}
+.our-services {}
 
 
 .our-services-img {
-  width: 40%;
-
-  align-self: stretch;
+  height: 100%;
+  z-index: -1;
 }
 
 .our-services-info {
   max-width: 900px;
-  padding: 90px 0 70px 0;
-  width: 44%;
+  padding: 90px 10px 70px 20px;
 
-  margin-left: 16%;
 
 }
 
@@ -259,6 +260,8 @@ h4 {
 .work-types-bg {
   background: #EBEDF3;
 }
+
+.work-types__img {}
 
 .work-types-block {
   display: flex;
@@ -333,9 +336,9 @@ h4 {
 }
 
 .presentation-request__header {
-  margin-bottom: 36px;
+  max-width: 1125px;
+  margin: 0 auto 36px auto;
   font-weight: 800;
-  padding: 0 100px;
   line-height: 130%;
 }
 
@@ -356,7 +359,7 @@ h4 {
 
 .why-us {
   padding: 92px 0 40px 0;
-  text-align: center;
+
 }
 
 .why-us__header {
@@ -365,6 +368,7 @@ h4 {
   font-weight: 800;
   line-height: 130%;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .why-us-list {
@@ -605,4 +609,255 @@ h4 {
   line-height: 140%;
   padding-top: 36px;
   padding-bottom: 48px;
+}
+
+@media (max-width: 1000px) {
+
+  h1 {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 120%;
+  }
+
+  .header-contacts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 17px 0;
+  }
+
+  .header-name {
+    margin: 50px auto 22px auto;
+
+  }
+
+  .header-discr {
+
+    padding-bottom: 50px;
+
+
+  }
+
+  .right-img {
+    display: none;
+  }
+
+  .left-img {
+    display: none;
+  }
+
+
+  .our-services-info {
+
+    padding: 90px 20px 70px 50px;
+
+
+  }
+
+  .our-services__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .our-services-item {
+    width: 90%;
+    margin-bottom: 45px;
+  }
+
+  .work-types__img {
+    display: none;
+  }
+
+
+  .work-types-block {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+  }
+
+  .work-types {
+    max-width: 700px;
+    padding: 90px 0 61px 0;
+  }
+
+  .work-types__header {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 130%;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 49px;
+  }
+
+  .work-types__list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .work-types-item {
+    width: 80%;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+
+
+  .presentation-request {
+    padding: 65px 50px 58px 50px;
+    text-align: center;
+  }
+
+  .presentation-request__header {
+    text-align: start;
+  }
+
+  .presentation-request__discr {
+
+    text-align: start;
+  }
+
+  .presentation-request__btn {
+    padding: 14px 24px;
+  }
+
+
+  .why-us {
+    padding: 92px 50px 40px 50px;
+
+  }
+
+
+
+  .why-us-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+  }
+
+  .why-us-item {
+    width: 100%;
+  }
+
+
+  .advantage {
+    padding: 79px 50px 40px 50px;
+    position: relative;
+  }
+
+
+  .advantage-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1000px;
+  }
+
+  .advantage-item {
+    margin-bottom: 60px;
+    width: 100%;
+  }
+
+
+  .advantage-message {
+    display: none;
+
+  }
+
+  .questions {
+    padding: 83px 50px 74px 50px;
+    max-width: 660px;
+  }
+
+  .request-bg {
+    background-image: url("Images/Rectangle5.jpg");
+    background-size: cover;
+  }
+
+  .request {
+    padding: 55px 50px 64px 50px;
+
+  }
+
+
+  .request-inputs {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 39px;
+  }
+
+
+  .footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: top;
+
+  }
+
+  .footer-contacts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .footer-contacts1 {
+    justify-content: flex-start;
+  }
+
+  .footer__logo {}
+
+  .footer-contacts2 {
+    justify-content: flex-start;
+  }
+
+  .footer__number,
+  .footer__mail {
+    font-weight: 800;
+    font-size: 24px;
+    line-height: 29px;
+    margin-left: 0px;
+    text-decoration: none;
+    text-align: start;
+    margin-bottom: 20px;
+  }
+
+
+
+
+
+  .footer__copyright {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 140%;
+
+    padding-bottom: 48px;
+    text-align: center;
+    padding: 36px 50px 0 50px;
+  }
 }
