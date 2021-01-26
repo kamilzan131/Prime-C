@@ -122,10 +122,11 @@ h4 {
   padding: 0 370px;
   text-align: center;
   padding-bottom: 247px;
+
 }
 
 .offer {
-  padding: 62px 50px;
+  padding: 62px 10px;
   text-align: center;
 }
 
@@ -142,8 +143,8 @@ h4 {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  padding: 0 70px;
-  margin-bottom: 70px;
+  margin: 0 auto 70px auto;
+  max-width: 1090px;
 }
 
 .offer-item {
@@ -167,7 +168,8 @@ h4 {
   font-weight: bold;
   font-size: 27px;
   line-height: 130%;
-  padding: 0 150px;
+  max-width: 930px;
+  margin: 0 auto;
 
 }
 
@@ -189,8 +191,28 @@ h4 {
 }
 
 .our-services {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 100%;
+}
+
+
+.our-services-img {
+  width: 40%;
+
+  align-self: stretch;
+}
+
+.our-services-info {
   max-width: 900px;
   padding: 90px 0 70px 0;
+  width: 44%;
+
+  margin-left: 16%;
+
 }
 
 .our-services__header {
@@ -222,7 +244,7 @@ h4 {
   display: inline-block;
   width: 75%;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 140%;
 }
 
@@ -235,7 +257,7 @@ h4 {
 
 
 .work-types-bg {
-  background-color: white;
+  background: #EBEDF3;
 }
 
 .work-types-block {
@@ -436,13 +458,13 @@ h4 {
 
 .advantage-message-inner {
   padding-left: 28px;
-  padding-right: 22px;
+  padding-right: 28px;
 }
 
 .advantage-message__img {
   display: block;
 
-  margin: 38px 0px 27px 0px;
+  margin: 38px auto 27px auto;
 }
 
 .advantage-massage__text {
@@ -470,7 +492,6 @@ h4 {
   line-height: 130%;
   color: #3A4454;
   margin-bottom: 36px;
-  text-transform: uppercase;
 }
 
 .questions__discr {
