@@ -315,7 +315,7 @@ h4 {
 .work-types__img {
   position: absolute;
   right: 50%;
-  bottom: 50%;
+  bottom: 45%;
   z-index: 0;
   transform: translateX(50%) translateY(50%);
 
@@ -328,8 +328,7 @@ h4 {
 
 .work-types {
 
-  padding: 90px 0 61px 0;
-
+  padding: 90px 0 120px 0;
 }
 
 .work-types__header {
@@ -337,7 +336,7 @@ h4 {
   font-size: 36px;
   line-height: 130%;
   text-transform: uppercase;
-  margin: 0 auto 49px auto;
+  margin: 0 auto 145px auto;
 }
 
 .work-types__list {
@@ -355,6 +354,7 @@ h4 {
   justify-content: space-between;
   align-items: flex-end;
   width: 50%;
+  margin-right: 45%;
 }
 
 .work-types__list-2 {
@@ -362,7 +362,7 @@ h4 {
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 50%;
 }
 
@@ -373,7 +373,7 @@ h4 {
   justify-content: flex-end;
   align-items: flex-start;
   margin-bottom: 50px;
-  width: 55%;
+
 }
 
 .work-types__point {
@@ -481,83 +481,148 @@ h4 {
 
 
 
-.advantage-bg {
-  background: #3A4454;
-  position: relative;
+
+.procedure-bg {
+  background-image: url('Images2/Rectangle6.png');
+  background-size: cover;
 }
 
-.advantage {
-  padding: 79px 0 40px 0;
-  position: relative;
+.procedure {
+  padding: 79px 0 50px 0;
+  max-width: 1032px;
+  margin: 0 auto;
 }
 
-.advantage__header {
+.procedure__header {
   font-weight: 800;
-  text-align: center;
   line-height: 130%;
-  margin-bottom: 77px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 48px;
 }
 
-.advantage-list {
+.procedure-item {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
   align-items: flex-start;
-  max-width: 1000px;
+  margin-bottom: 14px;
+
 }
 
-.advantage-item {
-  margin-bottom: 60px;
-  width: 50%;
+.procedure-item-type1 {}
+
+.procedure-item-block {
+  background: #EBEDF3;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 22px 36px 28px 36px;
+  max-width: 740px;
 }
 
-.advantage-item__img {
-  display: inline-block;
-  margin-right: 10px;
-  min-width: 48px;
-}
+.procedute-item-block__img {}
 
-.advantage-item__discr {
+.procedure-item-block__text {
   font-weight: bold;
   font-size: 24px;
-  line-height: 140%;
-  display: inline-block;
-  vertical-align: top;
-  text-align: start;
-  width: 70%;
-}
-
-.advantage-message {
-  position: absolute;
-  top: 203px;
-  right: 290px;
-  background-image: url("Images/message-cloud.png");
-  background-repeat: no-repeat;
-  width: 317px;
-  height: 340px;
-}
-
-.advantage-message-inner {
-  padding-left: 28px;
-  padding-right: 28px;
-}
-
-.advantage-message__img {
-  display: block;
-
-  margin: 38px auto 27px auto;
-}
-
-.advantage-massage__text {
-
-  font-weight: bold;
-  font-size: 21px;
   line-height: 130%;
-  text-align: start;
   color: #3A4454;
 }
 
+.procedure-item-type2 {
+  justify-content: flex-end;
+}
+
+.procedure-item__arrow {}
+
+.procedure__footer {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 140%;
+  text-align: center;
+  max-width: 550px;
+  margin: 66px auto 0 auto;
+}
+
+.portfolio {
+  padding: 84px 0 130px 0;
+}
+
+.portfolio__header {
+  font-weight: bold;
+  line-height: 130%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #3A4454;
+}
+
+.portfolio-item {
+  width: 90%;
+  padding: 30px 36px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  margin: 64px auto;
+}
+
+.portfolio-before,
+.portfolio-after {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.portfolio-before__title,
+.portfolio-after__title {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 140%;
+  color: #3A4454;
+  width: 12%;
+  margin-right: 40px;
+}
+
+.portfolio-before__img {}
+
+
+
+
+
+.portfolio-after__img {}
+
+.portfolio-info {}
+
+.portfolio-info__name {
+
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 140%;
+  color: #3A4454;
+}
+
+.portfolio-info__discr {
+  font-weight: 300;
+  font-size: 21px;
+  line-height: 140%;
+  color: #3A4454;
+}
+
+.portfolio-info__footer {
+  margin: 30px auto;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 130%;
+
+
+
+  color: #3A4454;
+}
 
 .questions-bg {
   background-color: white;
@@ -688,6 +753,14 @@ h4 {
   padding-top: 36px;
   padding-bottom: 48px;
 }
+
+
+
+.text-align-s {
+  text-align: start;
+}
+
+
 
 @media (max-width: 1000px) {
 
