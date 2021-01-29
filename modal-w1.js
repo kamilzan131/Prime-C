@@ -1,8 +1,12 @@
-let modal = document.querySelectorAll('.overlay');
-let btn = document.querySelectorAll('.my-btn');
-let spClose = document.getElementsByClassName('closex');
+const modal = document.querySelectorAll('.overlay'),
+  btn = document.querySelectorAll('.my-btn'),
+  spClose = document.querySelectorAll('.closex'),
+  licenseBtns = document.querySelectorAll('.license__link'),
+  licenseScreen = document.querySelector('.license-bg'),
+  licenseClose = document.querySelector('.license-closex');
 
 console.log(spClose);
+
 
 for (const _btn of btn) {
   _btn.onclick = function () {
@@ -24,21 +28,46 @@ for (const _btn of btn) {
 
 }
 
+for (const _btn of licenseBtns) {
+  _btn.onclick = function () {
+
+    licenseScreen.style.display = "block";
+    console.log('license open');
+
+    
+  };
+
+}
+
 for (let i = 0; i < spClose.length; i++) { 
   spClose[i].onclick = function () {
     for (let j = 0; j < modal.length; j++) {
   
       modal[j].style.display = "none";
-      
+
     }
+
+   
   };
 }
 
-window.onclick = function (event) {
-  for (let j = 0; j < modal.length; j++) { 
+
+licenseClose.addEventListener('click', () => {
+  licenseScreen.style.display = "none";
+});
+
+window.addEventListener('click', (event) => {
+  for (let j = 0; j < modal.length; j++) {
     if (event.target == modal[j]) {
       modal[j].style.display = "none";
+      console.log('winclick');
     }
   
   }
-};
+});
+
+
+ 
+ 
+
+

@@ -28,9 +28,6 @@ h4 {
 }
 
 
-.white {
-  color: white;
-}
 
 .container {
   max-width: 1340px;
@@ -659,10 +656,11 @@ h4 {
 
 .request-bg {
   background-image: url("Images/Rectangle5.jpg");
+  background-size: cover;
 }
 
 .request {
-  padding: 55px 0 64px 0;
+  padding: 55px 0 38px 0;
   text-align: center;
 }
 
@@ -760,6 +758,35 @@ h4 {
 }
 
 
+
+
+/*license*/
+
+.license {
+
+  display: block;
+  margin: 14px auto 0 auto;
+}
+
+.license__cbx {}
+
+.license__text {
+  font-weight: 300;
+  font-size: 11px;
+  line-height: 140%;
+
+  color: #1F6EB6;
+  text-align: center;
+}
+
+.license__link {
+  cursor: pointer;
+}
+
+
+.white {
+  color: white;
+}
 
 @media (max-width: 1000px) {
 

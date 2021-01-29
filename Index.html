@@ -178,42 +178,42 @@
             <div class="why-us-list">
               <div class="why-us-item">
                 <img src="Images/settings-1.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">ПОЛНЫЙ КОМПЛЕКС РАБОТ</span>
+                <span class="why-us-item__discr ">ПОЛНЫЙ КОМПЛЕКС РАБОТ</span>
               </div>
 
               <div class="why-us-item">
                 <img src="Images/people.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">КОМАНДА ПРОФЕССИОНАЛОВ</span>
+                <span class="why-us-item__discr ">КОМАНДА ПРОФЕССИОНАЛОВ</span>
               </div>
 
               <div class="why-us-item">
                 <img src="Images/hourglass1.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">ЭКОНОМИМ ВАШЕ ВРЕМЯ</span>
+                <span class="why-us-item__discr ">ЭКОНОМИМ ВАШЕ ВРЕМЯ</span>
               </div>
 
               <div class="why-us-item">
                 <img src="Images/history.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">В ЛЮБОЕ ВРЕМЯ СУТОК (24/7)</span>
+                <span class="why-us-item__discr ">В ЛЮБОЕ ВРЕМЯ СУТОК (24/7)</span>
               </div>
 
               <div class="why-us-item">
                 <img src="Images/stopwatch.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">ОПЕРАТИВНОСТЬ РЕАГИРОВАНИЯ</span>
+                <span class="why-us-item__discr ">ОПЕРАТИВНОСТЬ РЕАГИРОВАНИЯ</span>
               </div>
 
               <div class="why-us-item">
                 <img src="Images/tag-alt.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">ЭКОНОМИЯ ФИНАНСОВ</span>
+                <span class="why-us-item__discr ">ЭКОНОМИЯ ФИНАНСОВ</span>
               </div>
 
               <div class="why-us-item">
                 <img src="Images/file.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">КОНТРОЛЬ РАБОТЫ</span>
+                <span class="why-us-item__discr ">КОНТРОЛЬ РАБОТЫ</span>
               </div>
 
               <div class="why-us-item">
                 <img src="Images/inbox-alt.png" alt="" class="why-us-item__img">
-                <span class="why-us-item__discr white">ПРОЗРАЧНАЯ ДОКУМЕНТАЦИЯ</span>
+                <span class="why-us-item__discr ">ПРОЗРАЧНАЯ ДОКУМЕНТАЦИЯ</span>
               </div>
             </div>
           </div>
@@ -302,7 +302,13 @@
             <button id="my-btn" name="call-me" class="button request__btn  my-btn white" type="button">
               Оставить заявку
             </button>
+            <div class="license">
+              <input type="checkbox" id="cbx-request" name="license" class="license__cbx">
+              <label for="cbx-request"><span class="license__text white">Я согласен с</span></label><span
+                class="license__text license__link white"> условиями обработки персональных
+                данных</span>
 
+            </div>
           </form>
         </div>
 
@@ -336,7 +342,13 @@
         <button id="my-btn" name="call-me" class="button form-popup__button" type="button">
           Получить презентацию
         </button>
+        <div class="license">
+          <input type="checkbox" id="cbx-request" name="license" class="license__cbx">
+          <label for="cbx-request"><span class="license__text wite">Я согласен с</span></label><span
+            class="license__text license__link "> условиями обработки персональных
+            данных</span>
 
+        </div>
         <span class="close-popup closex"></span>
       </form>
     </div>
@@ -353,9 +365,57 @@
         <button id="my-btn" name="call-me" class="button form-popup__button" type="button">
           Получить чек-лист
         </button>
+        <div class="license">
+          <input type="checkbox" id="cbx-request" name="license" class="license__cbx">
+          <label for="cbx-request"><span class="license__text ">Я согласен с</span></label><span
+            class="license__text license__link "> условиями обработки персональных
+            данных</span>
 
+        </div>
         <span class="close-popup closex"></span>
       </form>
+    </div>
+  </div>
+
+
+  <div class="license-bg" name="license" style="display:none;">
+    <div class="license-popup">
+      <div class="license-info">
+        <h2 class="license-popup__header">УСЛОВИЯ ОБРАБОТКИ ПЕРСОНАЛЬНЫХ ДАННЫХ</h2>
+
+        <p class="license-popup__text">Компания «Прайм-С» (далее Компания) собирает личную информацию о Вас
+          (персональные данные) всякий раз, когда вы ее указываете на сайте, отправляете по электронной почте или
+          сообщаете лично. Передавая Компании свои персональные данные, Вы соглашаетесь с условиями, приведенными здесь.
+          В соответствии с действующим законодательством и Политикой компании «Прайм-С» о защите персональных данных, Вы
+          можете в любое время их изменить, обновить или попросить об удалении.</p>
+
+        <p class="license-popup__text">При оформлении заявки на сайте Вы можете предоставить следующую информацию:</p>
+        <ul class="license-popup__text left-shift">
+          <li>Имя, Фамилия, Отчество;</li>
+          <li>Номер контактного телефона и адрес электронной почты, по которым мы можем связаться с Вами;</li>
+        </ul>
+
+        <p class="license-popup__text">Также Компания собирает некоторую статистическую информацию, например:</p>
+        <ul class="license-popup__text left-shift">
+          <li>IP-адрес пользователя;</li>
+          <li>Тип браузера;</li>
+          <li>Дата, время и количество посещений;</li>
+          <li>Адрес сайта, с которого пользователь осуществил переход на сайт Компании;</li>
+          <li>Сведения о местоположении;</li>
+          <li>Сведения о посещенных страницах, о просмотре рекламных баннеров;</li>
+          <li>Информация, предоставляемая Вашим браузером (тип устройства, тип и версия браузера, операционная система и
+            т.п.).</li>
+        </ul>
+        <p class="license-popup__text">«Прайм-С» ответственно относится к вопросу конфиденциальности своих пользователей
+          и уважает право каждого пользователя сайта на конфиденциальность.</p>
+        <p class="license-popup__text">Компания гарантирует, что никакая полученная от Вас информация никогда и ни при
+          каких условиях не будет предоставлена третьим лицам без вашего согласия, за исключением случаев,
+          предусмотренных действующим законодательством Российской Федерации.</p>
+        <p class="license-popup__text">Компания гарантирует, что персональные данные, передаваемые Вами Компании, будут
+          обрабатываться в строгом соответствии с действующим законодательством.</p>
+      </div>
+
+      <span class="close-popup license-closex"></span>
     </div>
   </div>
 

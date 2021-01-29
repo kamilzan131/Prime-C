@@ -52,6 +52,28 @@
 }
 
 
+.license-bg {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  opacity: 1;
+  transition: opacity .8s;
+}
+
+.license-popup {
+  max-width: 600px;
+  background: #E5E5E5;
+  color: #333;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 60px 10px 40px 20px;
+
+}
 
 
 .form-popup__header {
@@ -66,6 +88,34 @@
   font-size: 28px;
 
 }
+
+
+.license-info {
+  max-height: 500px;
+  overflow-y: scroll;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
+
+.license-popup__header {
+  font-size: 22px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #336699;
+}
+
+.license-popup__text {
+  text-align: left;
+  color: #3a4454;
+  font-size: 16px;
+  line-height: 22px;
+  margin: 20px 0;
+}
+
+.left-shift {
+  margin-left: 40px;
+}
+
 
 .form-popup__input {
   border: #C4C4C4 solid 1px;
